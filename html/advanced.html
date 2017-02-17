@@ -1,0 +1,16 @@
+<p class="intro">Please choose whether you wish to study all kana or only the basics. Note that choosing all kana can make the test longer, as more characters need to be tested.</p>
+<div class="optioncontainer">
+	<ul class="optionmenu">
+		<li name="basic"><h1>Basic</h1><span>I want to practice only the basic kana.</span></li>
+		<li name="advanced"><h1>Advanced</h1><span>I want to practice all the kana, including diacritics and digraphs.</span></li>	
+	</ul>		
+</div>
+<script>
+	$('.optionmenu li').click(function(e){
+		var elem = e.target;
+		while (elem.tagName != 'LI') elem = elem.parentNode;
+		var name = $(elem).attr('name');
+		level = name;
+		loadPage('main.html');
+	});
+</script>

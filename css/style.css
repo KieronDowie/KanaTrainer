@@ -1,0 +1,361 @@
+@charset "UTF-8";
+/*
+* UtilityBelt - a starter kit for any SASS project
+* By @dmtintner & @hackingui
+* Documentation and examples - hackingui.com/front-end/10-best-scss-utilities/
+* V1.2.0
+*/
+/*
+## Triangle
+* @include triangle within a pseudo element and add positioning properties (ie. top, left)
+* $direction: up, down, left, right
+*/
+/*
+* Currency
+*/
+/*
+* Clearfix
+*/
+/*
+* Respond To
+*/
+/*
+* Ghost Vertical Align
+*/
+/*
+* Truncate Text
+the mixin is used for shortening long captions
+overflowing text is replaced by "..."
+*/
+@keyframes alertMe {
+  from {
+    border-width: 3px;
+    border-color: gold; }
+  to {
+    border-width: 0;
+    border-color: rgba(255, 215, 0, 0.1); } }
+/*
+* Resize Sprite - for resizing only a single image from a sprite
+*
+* params: $map = $<name>-sprites (ex. $icon-sprites)
+*         $sprite = file name w/o file type ending (ex. globe)
+          $percent = number (ex. 50)
+*
+* (if compass CSS3 mixins not included, uncomment the background-size row and comment the @include version)
+*/
+/*
+* Resizes all images in a given sprite
+* mixin courtesy of Wilker L├║cio https://gist.github.com/wilkerlucio/6442309
+* params: $only = if you want to list specific files instead of regenerating every image (ex. globe, checkmark)
+*/
+/*
+## Text-align justify
+For perfectly aligned grids that don't rely on floating elements and difficult calculations
+
+- http://www.barrelny.com/blog/text-align-justify-and-rwd/ */
+/*
+## Placeholder Color - for styling input placeholders in every browser
+*/
+/*! normalize.css v3.0.2 | MIT License | git.io/normalize */
+html {
+  font-family: sans-serif;
+  -ms-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%; }
+
+body {
+  margin: 0; }
+
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+main,
+menu,
+nav,
+section,
+summary {
+  display: block; }
+
+audio,
+canvas,
+progress,
+video {
+  display: inline-block;
+  vertical-align: baseline; }
+
+audio:not([controls]) {
+  display: none;
+  height: 0; }
+
+[hidden],
+template {
+  display: none; }
+
+a {
+  background-color: transparent; }
+
+a:active,
+a:hover {
+  outline: 0; }
+
+abbr[title] {
+  border-bottom: 1px dotted; }
+
+b,
+strong {
+  font-weight: bold; }
+
+dfn {
+  font-style: italic; }
+
+h1 {
+  font-size: 2em;
+  margin: 0.67em 0; }
+
+mark {
+  background: #ff0;
+  color: #000; }
+
+small {
+  font-size: 80%; }
+
+sub,
+sup {
+  font-size: 75%;
+  line-height: 0;
+  position: relative;
+  vertical-align: baseline; }
+
+sup {
+  top: -0.5em; }
+
+sub {
+  bottom: -0.25em; }
+
+img {
+  border: 0; }
+
+svg:not(:root) {
+  overflow: hidden; }
+
+figure {
+  margin: 1em 40px; }
+
+hr {
+  -moz-box-sizing: content-box;
+  box-sizing: content-box;
+  height: 0; }
+
+pre {
+  overflow: auto; }
+
+code,
+kbd,
+pre,
+samp {
+  font-family: monospace, monospace;
+  font-size: 1em; }
+
+button,
+input,
+optgroup,
+select,
+textarea {
+  color: inherit;
+  font: inherit;
+  margin: 0; }
+
+button {
+  overflow: visible; }
+
+button,
+select {
+  text-transform: none; }
+
+button,
+html input[type="button"],
+input[type="reset"],
+input[type="submit"] {
+  -webkit-appearance: button;
+  cursor: pointer; }
+
+button[disabled],
+html input[disabled] {
+  cursor: default; }
+
+button::-moz-focus-inner,
+input::-moz-focus-inner {
+  border: 0;
+  padding: 0; }
+
+input {
+  line-height: normal; }
+
+input[type="checkbox"],
+input[type="radio"] {
+  box-sizing: border-box;
+  padding: 0; }
+
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {
+  height: auto; }
+
+input[type="search"] {
+  -webkit-appearance: textfield;
+  -moz-box-sizing: content-box;
+  -webkit-box-sizing: content-box;
+  box-sizing: content-box; }
+
+input[type="search"]::-webkit-search-cancel-button,
+input[type="search"]::-webkit-search-decoration {
+  -webkit-appearance: none; }
+
+fieldset {
+  border: 1px solid #c0c0c0;
+  margin: 0 2px;
+  padding: 0.35em 0.625em 0.75em; }
+
+legend {
+  border: 0;
+  padding: 0; }
+
+textarea {
+  overflow: auto; }
+
+optgroup {
+  font-weight: bold; }
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
+td,
+th {
+  padding: 0; }
+
+ul,
+li {
+  padding: 0;
+  margin: 0; }
+
+h1, p, footer {
+  padding: 0;
+  margin: 0; }
+
+.intro {
+  font-size: 20px;
+  margin: 10px;
+  text-align: center; }
+
+.optioncontainer {
+  display: block;
+  text-align: center;
+  margin-top: 40px; }
+  .optioncontainer .optionmenu {
+    display: inline-block;
+    list-style-type: none; }
+    .optioncontainer .optionmenu li {
+      padding: 10px;
+      padding-left: 50px;
+      cursor: pointer;
+      text-align: left; }
+      .optioncontainer .optionmenu li span {
+        color: #5F5F5F;
+        font-family: 'Open Sans', Arial; }
+      .optioncontainer .optionmenu li h1 {
+        color: #0b2169; }
+      .optioncontainer .optionmenu li:hover {
+        background: #5377ED; }
+      .optioncontainer .optionmenu li:hover span, .optioncontainer .optionmenu li:hover h1 {
+        color: white; }
+
+.container {
+  text-align: center; }
+  .container p {
+    margin: 50px;
+    font-size: 20px;
+    font-family: 'Open Sans', Helvetica; }
+
+.test {
+  width: 60%;
+  text-align: center;
+  display: inline-block; }
+  .test button {
+    background: #1745dc;
+    font-size: 18px;
+    font-family: 'Open Sans', Helvetica;
+    padding: 5px 10px;
+    margin-top: 20px;
+    color: white;
+    outline: none;
+    border: none;
+    box-shadow: 0px 0px 5px 0px black; }
+    .test button:hover {
+      background: #3c65eb; }
+    .test button:active {
+      background: #1237ae;
+      box-shadow: none; }
+  .test li {
+    font-family: 'Open Sans', Helvetica;
+    list-style-type: none;
+    display: block;
+    padding-top: 10px;
+    height: 50px;
+    width: 200px;
+    margin: 0 auto; }
+    .test li .kana {
+      display: block;
+      float: left;
+      margin-right: 10px;
+      margin-left: auto;
+      height: 50px;
+      width: 50px;
+      font-size: 20px;
+      border: 2px solid black;
+      position: relative; }
+      .test li .kana p {
+        left: 50%;
+        top: 50%;
+        position: absolute;
+        transform: translate(-50%, -50%);
+        margin: 0;
+        padding: 0; }
+    .test li .result {
+      margin: 0;
+      margin-left: 20px;
+      padding: 0;
+      float: left;
+      transform: translate(0, 50%); }
+    .test li input {
+      display: block;
+      float: left;
+      width: 40px;
+      height: 30px;
+      margin: 10px;
+      font-size: 20px;
+      text-align: center; }
+    .test li .timer {
+      display: block;
+      margin: 10px;
+      margin-left: 0;
+      float: left; }
+
+.correct {
+  color: green;
+  background: #4DE258; }
+
+.incorrect {
+  color: red;
+  background: #E56D6D; }
+
+.slower {
+  color: red; }
+
+.faster {
+  color: green; }
+
+/*# sourceMappingURL=style.css.map */

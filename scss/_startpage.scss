@@ -1,0 +1,153 @@
+$accent: #5377ED;
+.intro
+{
+	font-size: 20px;
+	margin: 10px;
+	text-align: center;
+}
+.optioncontainer
+{
+	display: block;
+	text-align:center;
+	margin-top: 40px;
+	.optionmenu
+	{
+		display: inline-block;	
+		list-style-type: none;			
+		li 
+		{
+			padding: 10px;
+			padding-left: 50px;
+			cursor: pointer;
+			text-align:left;
+			span 
+			{
+				color: #5F5F5F;
+				font-family: 'Open Sans', Arial;
+			}
+			h1
+			{
+				color: darken($accent,40);
+			}			
+			&:hover
+			{
+				background: #5377ED;
+			}
+			&:hover span, &:hover h1
+			{
+				color: white;
+			}
+		}
+	}
+}
+.container
+{
+	p 
+	{
+		margin: 50px;
+		font-size: 20px;
+		font-family: 'Open Sans', Helvetica;
+	}
+	text-align: center;
+}
+.test
+{	
+	width: 60%;
+	text-align: center;
+	display: inline-block;
+	button
+	{
+		background: darken($accent, 15);
+		font-size: 18px;
+		font-family: 'Open Sans', Helvetica;
+		padding: 5px 10px;
+		margin-top: 20px;
+		color: white;	
+		outline: none;
+		border: none;
+		box-shadow: 0px 0px 5px 0px black;
+		&:hover
+		{
+			background: darken($accent,5);
+		}
+		&:active
+		{
+			background: darken($accent, 25);
+			box-shadow: none;
+		}
+	}
+	li 
+	{
+		font-family: 'Open Sans', Helvetica;
+		list-style-type: none;		
+		display:block;
+		padding-top:10px;
+		height: 50px;
+		width: 200px;
+		margin: 0 auto;				
+		.kana
+		{
+			display: block;
+			float:left;
+			margin-right: 10px;
+			margin-left:auto;
+			height: 50px;
+			width: 50px;
+			font-size: 20px;
+			border: 2px solid black;
+			position:relative;
+			p
+			{
+				left:50%;
+				top:50%;
+				position: absolute;
+				transform: translate(-50%, -50%);
+				margin:0;
+				padding:0;
+			}
+		}
+		.result
+		{
+			margin:0;
+			margin-left:20px;
+			padding:0;
+			float:left;
+			transform:translate(0,50%);			
+		}
+		input
+		{
+			display: block;
+			float:left;
+			width: 40px;
+			height: 30px;
+			margin: 10px;
+			font-size: 20px;
+			text-align: center;
+		}
+		.timer
+		{
+			display: block;
+			margin: 10px;
+			margin-left:0;
+			float:left;
+		}
+	}
+}
+.correct
+{
+	color: green;
+	background: #4DE258;
+}
+.incorrect
+{
+	color: red;
+	background: #E56D6D;
+}
+.slower
+{
+	color:red;
+}
+.faster
+{
+	color:green;
+}
